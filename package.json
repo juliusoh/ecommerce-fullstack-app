@@ -8,6 +8,7 @@
     "server": "nodemon backend/index.ts",
     "db:create": "cd backend/database && sequelize db:create",
     "db:migrate": "cd backend/database && sequelize db:migrate",
+    "db:reset": "cd backend/database && sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate",
     "db:seed": "cd backend/database && sequelize db:seed:all",
     "format": "npx -p prettier@latest -p pretty-quick pretty-quick",
     "prettier": "prettier --write .",
